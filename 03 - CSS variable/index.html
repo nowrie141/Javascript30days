@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Clock</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" 
+      type="image/png" 
+      href="icon.png">
+</head>
+<body>
+
+  <h2> Change CSS Variables with <span class="h1">JS</span></h2>
+  <div class="controls">
+      <div class="input">
+      <label for="spacing">Spacing: <span class="spacing">10px</span></label><br>
+      <input type="range" name="spacing" min="0" max="200" value="10" data-sizing="px">
+    </div>
+    <div class="input">
+      <label for="blur">Blur: <span class="blur">0px</span></label><br>
+      <input type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+    </div>
+    <div class="input">
+      <label for="base">Base color: <span class="base">#000000</span></label><br>
+      <input type="color" name="base" value="#000000" data-sizing="#">
+    </div>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80">
+
+  <!-- Scripts always at the end -->
+  <script src="script.js"></script>
+</body>
+</html>

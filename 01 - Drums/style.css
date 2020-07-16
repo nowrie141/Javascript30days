@@ -17,7 +17,7 @@ body, html{
   background: url(https://www.blackheartparty.com/wp-content/uploads/black-heart-party-foto-fiesta-clandestina-19.jpg) no-repeat center fixed;
   background-size: cover;
   filter: blur(5px);
-  -webkit-filter: blur(8px);
+  -webkit-filter: blur(5px);
   height: 100%;
 }
 
