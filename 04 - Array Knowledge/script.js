@@ -130,13 +130,43 @@ const totalYears = inventors.reduce( (total, inventor) => {
 
 const total = document.querySelector(".totalyears")
 total.innerHTML = totalYears
-// 5. Sort the inventors by years lived
 
+// 5. Sort the inventors by years lived
+const orderByYears = inventors.sort( (a, b) => {
+  const aLived = a.passed - a.year
+  const bLived = b.passed - b.year
+  if (aLived < bLived){
+    return 1
+  }else{
+    return -1
+  }
+})
+createHTMLTable(orderByYears, 'orderbyyears')
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
+//const frame = document.querySelector('.mw-category')
+//const aList = Array.from(frame.querySelectorAll('a'))
+//let de = aList.map(link => link.textContent)
+//de = de.filter(street => street.includes('de'))
+
+//
+//
+
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+
+const orderAlphabet = people.sort( (a, b) => {
+  const [aFirst, aLast] = a.split(', ')
+  const [bFirst, bLast] = b.split(', ')
+  if (aLast > bLast){
+    return 1
+  }else{
+    return -1
+  }
+})
+
+createHTMLTable(orderAlphabet, 'orderalphabet')
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
@@ -156,3 +186,22 @@ const data = [
   'car',
   'truck'
 ]
+
+
+const count = data.reduce( (obj, item) => {
+  if(!obj[item]){
+    obj[item] = 0
+  }
+  obj[item]++
+  return obj
+}, {})
+
+const table = document.querySelector('.reduce')
+let txt = ""
+for (x in count) {
+  txt += "<tr><td>" + x + "<td>" + count[x] + "</tr>"
+}
+
+table.innerHTML = txt
+
+console.log();
