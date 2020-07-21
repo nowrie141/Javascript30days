@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Working with canvas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" 
+        type="image/png" 
+        href="icon.png">
+</head>
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+<div class="controls">
+
+  <div class="input">
+    <label for="size">Size: <span class="spansize">10</span></label><br>
+    <input type="range" name="size" class="size" min="1" max="50" value="10" data-sizing="px">
+  </div>
+
+  <div class="input">
+    <label for="base">Base color: <span class="spanbase">#000000</span></label><br>
+    <input type="color" name="base" class="base" value="#000000" data-sizing="#">
+  </div>
+
+  <div class="input">
+    <label for="clear">Clear draw</label><br>
+    <input type="button" name="clear" class="clear" id="clear" value="Clear">
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

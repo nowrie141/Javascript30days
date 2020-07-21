@@ -1,0 +1,22 @@
+html, body{
+  margin: 0;
+}
+
+.controls{
+  flex: 1;
+  margin-bottom: 5rem;
+  display: flex;
+}
+
+.controls > *{
+  width: 100%;
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas{
+  border: 1px black solid;
+  height: 100%;
+}

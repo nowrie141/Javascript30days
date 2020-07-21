@@ -18,7 +18,6 @@ function changeValues(){
   }else{
     span.innerText = this.value;
   }
-
 }
 
 input.forEach(input => input.addEventListener('change', handleValues));
