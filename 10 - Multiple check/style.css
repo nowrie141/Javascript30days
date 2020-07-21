@@ -1,0 +1,41 @@
+html{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: #ffd900e3;
+}
+
+.inbox{
+  max-width: 20rem;
+  margin: 50px auto;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+  margin: 11px;
+}
+
+/* If checked, line through the text */
+input:checked + p {
+  background: #F9F9F9;
+  text-decoration: line-through;
+}
+
+/*Specify the type of input*/
+input[type="checkbox"] {
+  margin: 30px;
+  width:30px;
+  height:30px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  border-left: 1px solid #D1E2FF;
+}
