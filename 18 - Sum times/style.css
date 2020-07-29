@@ -1,0 +1,33 @@
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  margin: 0;
+  background-color: #ffc600;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.videos{
+  list-style: none;
+  border: 5px black double;
+  background-color: white;
+  width: 300px;
+  font-size: 20px;
+  box-shadow: 10px 20px rgba(0, 0, 0, 0.05);
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.videos li{
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid black;
+}
+
+.videos li:last-child{
+  border-bottom: 0;
+}
